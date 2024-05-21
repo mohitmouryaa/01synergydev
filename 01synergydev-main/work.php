@@ -111,7 +111,7 @@ include('./Api/settingsApi.php');
                                 </li>
                                 <li>
                                     <h2 id="curTitle">
-                                        <a href="<?= $allworkpageData['list'][0]['media']['url'] ?>" class="circle-link" style="font-size: 30px;">
+                                        <a href="<?= $allworkpageData['list'][0]['pageUrl'] ?>" class="circle-link" style="font-size: 30px;">
                                             <div class="circle-icon">
                                                 <i></i>
                                                 <span><img src="images/arrow-hex.svg"><img src="images/arrow-hex.svg"></span>
@@ -122,7 +122,7 @@ include('./Api/settingsApi.php');
                                 </li>
                                 <li>
                                     <h2 id="nextTitle">
-                                        <a href="<?= @$allworkpageData['list'][1]['media']['url'] ?>" class="circle-link" style="font-size: 30px;">
+                                        <a href="<?= @$allworkpageData['list'][1]['pageUrl'] ?>" class="circle-link" style="font-size: 30px;">
                                             <div class="circle-icon">
                                                 <i></i>
                                                 <span><img src="images/arrow-hex.svg" alt="arrow icon with hexagon tip"><img src="images/arrow-hex.svg" alt="arrow icon with hexagon tip"></span>
