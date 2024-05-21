@@ -35,7 +35,7 @@ try {
   $emptyQuotes = rtrim($emptyQuotes, ',');
 
   // header('Content-Type: application/json');
-  // echo json_encode($links, JSON_PRETTY_PRINT);
+  // echo json_encode($allworkpageData, JSON_PRETTY_PRINT);
   // die();
 
   if (json_last_error() !== JSON_ERROR_NONE) {
