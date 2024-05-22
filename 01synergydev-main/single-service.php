@@ -151,7 +151,7 @@ include('./common/helper.php');
                         </article>
                     </div>
                     <div class="bs-xl-7 bs-xl-os-9 bs-xs-22 bs-xs-os-0 view xl-bottom-2 xs-top-2">
-                        <a href="/our-work" class="arrow-link al-hover bs-tech"><i><img src="/images/arrow-link.svg" alt="line arrow icon"></i>View all work</a>
+                        <a href="/our-work" class="arrow-link al-hover bs-tech"><i><img src="<?= $clientUrl ?>/images/arrow-link.svg" alt="line arrow icon"></i>View all work</a>
                     </div>
                 </div>
             </section>

@@ -11,7 +11,7 @@
         <!-- <p class="bs-60 split lines xl-bottom-4 xs-bottom-2 upper"> -->
         <?php echo @$homepageData['about']['longDescription'] ?>
         <!-- </p> -->
-        <a href="/our-work" class="arrow-link al-hover bs-tech"><i><img src="images/arrow-link.svg" alt="line arrow icon" /></i>Our Recent Work</a>
-        <a href="/services" class="arrow-link al-hover bs-tech"><i><img src="images/arrow-link.svg" alt="line arrow icon" /></i>Services</a>
+        <a href="/our-work" class="arrow-link al-hover bs-tech"><i><img src="<?= $clientUrl ?>/images/arrow-link.svg" alt="line arrow icon" /></i>Our Work</a>
+        <a href="/services" class="arrow-link al-hover bs-tech"><i><img src="<?= $clientUrl?>/images/arrow-link.svg" alt="line arrow icon" /></i>Services</a>
     </div>
 </section>

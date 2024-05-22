@@ -16,19 +16,12 @@
                 "frame bs-xl-3 bs-xl-os-3",
                 "frame bs-xl-3 bs-xl-os-11"
             ];
-            $placeholderImages = [
-                "images/awd-08-prel.webp",
-                "images/awd-02-prel.webp",
-                "images/awd-03-prel.webp",
-                "images/awd-04-prel.webp",
-                "images/awd-05-prel.webp",
-                "images/awd-06-prel.webp"
-            ];
+
             $index = 0;
 
             foreach ($awardData as $imageLink) {
                 $figureClass = $figureClasses[$index % count($figureClasses)];
-                $placeholderImage = $placeholderImages[$index % count($placeholderImages)];
+                $placeholderImage = $baseUrl . $imageLink; // Use the same image for placeholder
                 $altText = "Award image " . ($index + 1);
             ?>
                 <figure class="<?= $figureClass ?>">
@@ -38,6 +31,7 @@
                 $index++;
             }
             ?>
+
         </div>
 
     </div>

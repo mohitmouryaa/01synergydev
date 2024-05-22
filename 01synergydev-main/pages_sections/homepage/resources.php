@@ -55,7 +55,7 @@
           <div class="client-stat">
             <div class="stat-bg"></div>
             <div class="stat-inner">
-              <span class="stat-icon"><img src="images/heart-icon.svg" alt="Heart Icon" /></span>
+              <span class="stat-icon"><img src="<?= $clientUrl ?>/images/heart-icon.svg" alt="Heart Icon" /></span>
 
             </div>
           </div>

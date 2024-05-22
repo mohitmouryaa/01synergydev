@@ -39,11 +39,12 @@
               <div class="bs-grid grid-between grid-bottom xs-wrap">
                 <div class="bs-xl-4 bs-xs-14">
                   <ul class="service-links">
-                    <?php foreach (@$homepageData['whatWeDo']['list'] as $item) : ?>
+                    <?php $services = @$homepageData['whatWeDo']['list'] ? @$homepageData['whatWeDo']['list'] : $servicesData['list'] ; ?>
+                    <?php foreach ( $services as $key => $item) {  ?>
                       <li>
                         <a class="text-link" href="..<?php echo $item['url']; ?>"><span><?php echo $item['title']; ?></span></a>
                       </li>
-                    <?php endforeach; ?>
+                    <?php } ?>
                   </ul>
                 </div>
                 <div class="bs-xl-9 right bs-xs-12">

@@ -1484,7 +1484,7 @@
         s();
         const i = function() {
           const t = document.querySelectorAll(".side-scroll-item"),
-            o = t[0].offsetWidth * t.length + (window.innerWidth / 24) * (t.length - 1) - e.offsetWidth;
+            o = t[0]?.offsetWidth * t?.length + (window.innerWidth / 24) * (t?.length - 1) - e?.offsetWidth;
           gsap.to(e, {
             x: -o,
             ease: "none",
@@ -3792,7 +3792,7 @@
               ) {
                 let e = ScrollTrigger.getById("attScroll"),
                   t = ScrollTrigger.getById("clientPin");
-                e.kill(), t.kill();
+                e?.kill(), t?.kill();
               }
               if (document.querySelector(".about") && !isMobile()) {
                 ScrollTrigger.getById("timelineScroll").kill();
