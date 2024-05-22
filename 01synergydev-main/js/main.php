@@ -3047,28 +3047,28 @@
         const e = document.querySelector(".next-project h3 a"),
           t = document.querySelector(".next-project figure");
         if (
-          (e.addEventListener("mouseenter", function() {
+          (e?.addEventListener("mouseenter", function() {
               t.classList.add("hovering"), e.classList.add("hovering"), gsap.to(t, {
                 x: 10,
                 duration: 0.5,
                 ease: "power4"
               });
             }),
-            e.addEventListener("mouseleave", function() {
+            e?.addEventListener("mouseleave", function() {
               t.classList.remove("hovering"), e.classList.remove("hovering"), gsap.to(t, {
                 x: 0,
                 duration: 0.5,
                 ease: "power4"
               });
             }),
-            t.addEventListener("mouseenter", function() {
+            t?.addEventListener("mouseenter", function() {
               t.classList.add("hovering"), e.classList.add("hovering"), gsap.to(t, {
                 x: 10,
                 duration: 0.5,
                 ease: "power4"
               });
             }),
-            t.addEventListener("mouseleave", function() {
+            t?.addEventListener("mouseleave", function() {
               t.classList.remove("hovering"), e.classList.remove("hovering"), gsap.to(t, {
                 x: 0,
                 duration: 0.5,
@@ -3895,16 +3895,15 @@
         t = $("#smooth-wrapper").smoothState(e).data("smoothState");
     });
 
-  //   document.addEventListener('DOMContentLoaded', function() {
-  //     document.querySelectorAll('a').forEach(function(link) {
-  //         link.addEventListener('click', function(event) {
-  //           event.preventDefault(); // Prevent the default link behavior
-  //           setTimeout(() => {
-  //             let targetUrl = this.getAttribute('href'); // Get the href attribute of the clicked link
-  //             window.location.href = targetUrl; // Change the location to the target URL
-  //           }, 300);
-
-  //         });
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   document.querySelectorAll('a.reload').forEach(function(link) {
+  //     link.addEventListener('click', function(event) {
+  //       event.preventDefault(); // Prevent the default link behavior
+  //       setTimeout(() => {
+  //         let targetUrl = this.getAttribute('href'); // Get the href attribute of the clicked link
+  //         window.location.href = targetUrl; // Change the location to the target URL
+  //       }, 800);
   //     });
+  //   });
   // });
 </script>

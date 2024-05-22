@@ -12,8 +12,8 @@
             </div>
           </h1>
           <div id="hero-work-link" class="bs-xl-8 bs-xl-os-10 bs-xs-16 bs-xs-os-0 hero-in">
-            <a href="/<?php echo @$homepageData['header']['latestWork']['title']; ?>.php" <span class="link-bg"></span>
-              <span class="bs-hero-small upper">Latest project</span>
+            <a href="<?= @$homepageData['header']['latestWork']['url']; ?>" class="reload"> <span class="link-bg"></span>
+              <span class="bs-hero-small upper">Latest projects</span>
               <i>
                 <svg viewBox="0 0 56 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="arrow-line" d="M1 6L49.8077 6" stroke="#EEEEF2" stroke-linecap="round" stroke-linejoin="round"></path>

@@ -64,7 +64,7 @@
                 <h2 class="thumb-title bs-14 upper FontBody"><?php echo  @$homepageData['ourWork']['list'][2]['title']; ?></h2>
               </a>
             </article>
-            <!-- <article class="bs-xl-6 bs-xl-os-2 bs-xs-22 bs-xs-os-0 xl-top-6 xs-top-1" data-speed="1.05">
+            <article class="bs-xl-6 bs-xl-os-2 bs-xs-22 bs-xs-os-0 xl-top-6 xs-top-1" data-speed="1.05">
               <a href="<?php echo @$homepageData['ourWork']['list'][3]['pageUrl']; ?>">
                 <figure>
                   <i class="work-lottie">
@@ -78,7 +78,7 @@
                 </figure>
                 <h2 class="thumb-title bs-14 upper FontBody"><?php echo  @$homepageData['ourWork']['list'][3]['title']; ?></h2>
               </a>
-            </article> -->
+            </article>
           </div>
         </div>
       </section>
