@@ -9,7 +9,7 @@
               </svg>
             </i>
           </a>
-          <a class="nav-link mask-link" data-id="Services" href="/services.php/" aria-label="Services"><span>Services</span>
+          <a class="nav-link mask-link" data-id="Services" href="/services" aria-label="Services"><span>Services</span>
             <i class="dot work-dot"><svg viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10 8.12543L5 11L-2.25534e-07 8.12543L2.3356e-07 2.87401L5 2.18537e-07L10 2.87401L10 8.12543Z"></path>
               </svg>
