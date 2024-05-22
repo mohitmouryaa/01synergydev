@@ -86,7 +86,7 @@ include('./common/helper.php');
                         </div>
                         <div class="bs-xl-12 bs-xl-os-1 bs-xs-22 bs-xs-os-0 xs-top-1 bs-grid xs-wrap">
                             <p class="bs-xl-5 bs-xs-16 upper bs-14 hero-in-text"><?= @$singleServiceData['serviceDescriptionLeft'] ?></p>
-                            <p class="bs-xl-5 bs-xl-os-2 bs-xs-22 bs-xs-os-0 xs-top-1 hero-in-text"><?= @$singleServiceData['serviceDescriptionRight'] ?></p>
+                            <p class="bs-xl-5 bs-xl-os-2 bs-xs-22 bs-xs-os-0 xs-top-1 hero-in-text"><?= @$singleServiceData['serviceDescriptionright'] ?></p>
                         </div>
                     </div>
                 </div>

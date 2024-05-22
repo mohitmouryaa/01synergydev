@@ -72,8 +72,8 @@ include('./Api/settingsApi.php');
                 <div>
                     <h1 class="hero-split chars">
                         <div class="bs-160 title-switch red">
-                            <!-- <span class="first" data-ch="0">Results-driven</span>
-                            <span data-ch="1">Compelling</span>
+                         <span class="first" data-ch="0">Software</span>
+                            <!-- <span data-ch="1">Compelling</span>
                             <span data-ch="2">Goal-oriented</span>
                             <span data-ch="3">Functional</span>
                             <span data-ch="4">Performant</span> -->
@@ -113,7 +113,7 @@ include('./Api/settingsApi.php');
                         <h2 class="section-title"><i class="circle-tag"></i><i class="circle-tag"></i>Workflow</h2>
                     </div>
                     <div class="bs-xl-9 bs-xs-22 xs-top-1">
-                        <h3 class="bs-120 upper split chars">Our Pathway To Success<i class="dot view"></i></h3>
+                        <h3 class="bs-120 upper split chars"><?= @$servicesData['workflow']['title']?><i class="dot view"></i></h3>
                     </div>
                 </div>
                 <div class="flying-panes xl-top-2 xs-top-1 bs-xs-22">
@@ -152,7 +152,7 @@ include('./Api/settingsApi.php');
             <section class="goal xl-top-4 xs-top-4">
                 <div class="bs-xl-14 bs-xl-os-5 bs-xs-22 bs-xs-os-1 center">
                     <h2 class="section-title"><i class="circle-tag"></i><i class="circle-tag"></i></h2>
-                    <h3 class="bs-120 xl-top-1 split chars">Driving Success, Delivering Results<i class="dot view"></i></h3>
+                    <h3 class="bs-120 xl-top-1 split chars"><?= @$servicesData['bottomTitle']?><i class="dot view"></i></h3>
                     <div class="bs-xl-2 bs-xl-os-6 bs-xs-4 bs-xs-os-9">
                         <div class="line-anim">
                             <svg width="11" height="9" xmlns="http://www.w3.org/2000/svg">
@@ -165,7 +165,7 @@ include('./Api/settingsApi.php');
                         </div>
                     </div>
                     <div class="bs-xl-5 bs-sm-10 bs-xs-20 centered xl-top-1">
-                        <p class="view">We deeply understand the significance of your business, and that's why it’s our primary goal to enhance it. These aren't just words; we have a solid track record of delivering outstanding results.</p>
+                        <p class="view"><?= @$servicesData['bottomDescription']?>.</p>
                     </div>
                 </div>
 
