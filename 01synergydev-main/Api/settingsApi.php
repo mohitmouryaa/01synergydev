@@ -24,7 +24,7 @@ try {
 
 
   // header('Content-Type: application/json');
-  // echo json_encode($homepageData, JSON_PRETTY_PRINT); die();
+  // echo json_encode($settingData, JSON_PRETTY_PRINT); die();
 
   if (json_last_error() !== JSON_ERROR_NONE) {
     echo "JSON Error: " . json_last_error_msg();

@@ -26,7 +26,7 @@ include('./Api/settingsApi.php');
     </style>
 </head>
 
-<body class="loading root">
+<body class="loading">
     <?php include('./common/webgl.php') ?>
 
     <?php include('./common/menuIcon.php') ?>

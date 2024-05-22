@@ -26,7 +26,7 @@ include('./Api/settingsApi.php');
     </style>
 </head>
 
-<body class="loading default">
+<body class="loading">
 
     <?php include('./common/menuIcon.php'); ?>
 

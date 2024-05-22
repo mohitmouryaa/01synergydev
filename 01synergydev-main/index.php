@@ -20,7 +20,7 @@ switch (true) {
         include 'work.php';
         break;
 
-    case strpos($url, '/services/') === 0:
+    case strpos($url, '/service/') === 0:
         $serviceDetail = substr($url, strlen('/service/'));
         include 'single-service.php';
         break;

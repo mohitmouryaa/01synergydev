@@ -119,34 +119,34 @@ include('./common/helper.php');
                         <div class="bs-xl-7 bs-xs-22 ">
                             <h3 class="bs-120 upper split chars bs-xl-6 bs-xs-14">Latest projects<i class="dot view"></i></h3>
                             <article class="xl-top-2 xs-top-1">
-                                <a href="../work/hoboken-yogi">
+                                <a href="<?= $clientUrl.@$singleServiceData['latestWork'][0]['url'] ?>">
                                     <figure>
                                         <i class="work-lottie">
                                             <svg viewBox="0 0 660 660" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <mask id="imgMask1">
                                                     <path d="M0 0.5C0 0.223858 0.223858 0 0.5 0H659.5C659.776 0 660 0.223858 660 0.5V0.5C660 0.776142 659.829 1 659.553 1C653.058 1 577.308 1 528 1C476.451 1 447.549 1 396 1C344.451 1 315.549 1 264 1C212.451 1 183.549 1 132 1C82.6923 1 6.94176 1 0.447341 1C0.171199 1 0 0.776142 0 0.5V0.5Z" fill="black"></path>
                                                 </mask>
-                                                <image width="100%" height="100%" mask="url(#imgMask1)" href="http://64.227.180.135:8001/media/OurWorkMedia/triump.png"></image>
+                                                <image width="100%" height="100%" mask="url(#imgMask1)" href="<?= $baseUrl.@$singleServiceData['latestWork'][0]['imageLink'] ?>"></image>
                                             </svg>
                                         </i>
                                     </figure>
-                                    <h2 class="thumb-title FontBody upper bs-20">Hoboken Yogi</h2>
+                                    <h2 class="thumb-title FontBody upper bs-20"><?= @$singleServiceData['latestWork'][0]['title'] ?></h2>
                                 </a>
                             </article>
                         </div>
                         <article class="bs-xl-9 bs-xl-os-2 bs-xs-22 bs-xs-os-0 xs-top-1">
-                            <a href="../work/opositive">
+                            <a href="<?= $clientUrl.@$singleServiceData['latestWork'][1]['url'] ?>">
                                 <figure>
                                     <i class="work-lottie">
                                         <svg viewBox="0 0 660 660" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <mask id="imgMask2">
                                                 <path d="M0 0.5C0 0.223858 0.223858 0 0.5 0H659.5C659.776 0 660 0.223858 660 0.5V0.5C660 0.776142 659.829 1 659.553 1C653.058 1 577.308 1 528 1C476.451 1 447.549 1 396 1C344.451 1 315.549 1 264 1C212.451 1 183.549 1 132 1C82.6923 1 6.94176 1 0.447341 1C0.171199 1 0 0.776142 0 0.5V0.5Z" fill="black"></path>
                                             </mask>
-                                            <image width="100%" height="100%" mask="url(#imgMask2)" href="http://64.227.180.135:8001/media/OurWorkMedia/cambridge.png"></image>
+                                            <image width="100%" height="100%" mask="url(#imgMask2)" href="<?= $baseUrl.@$singleServiceData['latestWork'][1]['imageLink'] ?>"></image>
                                         </svg>
                                     </i>
                                 </figure>
-                                <h2 class="thumb-title FontBody upper bs-20">O Positive</h2>
+                                <h2 class="thumb-title FontBody upper bs-20"><?= @$singleServiceData['latestWork'][1]['title'] ?></h2>
                             </a>
                         </article>
                     </div>

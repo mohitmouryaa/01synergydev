@@ -2,7 +2,14 @@
     <div>
       <nav id="links">
         <div>
-          <a class="nav-link mask-link" data-id="work" href="/work.php" aria-label="Work"><span>Work</span>
+        <a class="nav-link mask-link" data-id="home" href="/" aria-label="Home"><span>Home</span>
+            <i class="dot work-dot">
+              <svg viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 8.12543L5 11L-2.25534e-07 8.12543L2.3356e-07 2.87401L5 2.18537e-07L10 2.87401L10 8.12543Z"></path>
+              </svg>
+            </i>
+          </a>
+        <a class="nav-link mask-link" data-id="work" href="/our-work" aria-label="Work"><span>Work</span>
             <i class="dot work-dot">
               <svg viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10 8.12543L5 11L-2.25534e-07 8.12543L2.3356e-07 2.87401L5 2.18537e-07L10 2.87401L10 8.12543Z"></path>
@@ -15,28 +22,14 @@
               </svg>
             </i>
           </a>
-          <a class="nav-link mask-link" data-id="Studio" href="../studio" aria-label="Studio"><span>Studio</span>
-            <i class="dot work-dot">
-              <svg viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 8.12543L5 11L-2.25534e-07 8.12543L2.3356e-07 2.87401L5 2.18537e-07L10 2.87401L10 8.12543Z"></path>
-              </svg>
-            </i>
-          </a>
-          <a class="nav-link mask-link" data-id="Contact" href="../contact" aria-label="Contact"><span>Contact</span>
-            <i class="dot work-dot">
-              <svg viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 8.12543L5 11L-2.25534e-07 8.12543L2.3356e-07 2.87401L5 2.18537e-07L10 2.87401L10 8.12543Z"></path>
-              </svg>
-            </i>
-          </a>
         </div>
       </nav>
       <div class="social bs-12">
-        <a href="https://www.linkedin.com/company/buzzworthystudio/" target="_blank" class="text-link" aria-label="Linkedin">Linkedin</a>
-        <a href="https://www.instagram.com/buzzworthy.studio/" target="_blank" class="text-link" aria-label="Instagram">Instagram</a>
-        <a href="https://twitter.com/getbuzzworthy" target="_blank" class="text-link" aria-label="Twitter">Twitter</a>
-        <a href="https://www.behance.net/BuzzworthyStudio" target="_blank" class="text-link" aria-label="Behance">Behance</a>
-        <a href="https://dribbble.com/01Synergy/" target="_blank" class="text-link" aria-label="Dribbble">Dribbble</a>
+
+          <a href="<?=@$settingData['footerContent']['twitterUrl']?>" target="_blank" class="text-link" aria-label="Twitter">Twitter</a>
+          <a href="<?=@$settingData['footerContent']['instagramUrl']?>" target="_blank" class="text-link" aria-label="Instagram">Instagram</a>
+          <a href="<?=@$settingData['footerContent']['facebookUrl']?>" target="_blank" class="text-link" aria-label="Facebook">Facebook</a>
+
       </div>
     </div>
   </div>

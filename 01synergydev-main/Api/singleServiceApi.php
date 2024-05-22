@@ -21,6 +21,10 @@ try {
   $singleServiceJson = $singleServiceContent->getBody();
   $singleServiceData = @json_decode($singleServiceJson, true)['whatWeDo'];
 
+  // header('Content-Type: application/json');
+  // echo json_encode($singleServiceData, JSON_PRETTY_PRINT); die();
+
+
   if (json_last_error() !== JSON_ERROR_NONE) {
     echo "JSON Error: " . json_last_error_msg();
     exit;
