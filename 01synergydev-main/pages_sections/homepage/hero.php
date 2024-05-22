@@ -3,17 +3,18 @@
         <div>
           <h1 class="bs-220">
             <div>
-              <span class="hero-split chars xs-center">Software</span>
-              <span class="hero-split chars red xs-center">Development</span>
+              <?php $heroTitle = breakSentenceToWords(@$homepageData['header']['title'] ); ?>
+              <span class="hero-split chars xs-center"><?= @$heroTitle[0] ?></span>
+              <span class="hero-split chars red xs-center"><?= @$heroTitle[1] ?></span>
             </div>
             <div>
-              <span class="hero-split chars red">Development</span>
-              <span class="hero-split chars right xs-left">Membership</span>
+              <span class="hero-split chars red"><?= @$heroTitle[1] ?></span>
+              <span class="hero-split chars right xs-left"><?= @$heroTitle[2] ?></span>
             </div>
           </h1>
           <div id="hero-work-link" class="bs-xl-8 bs-xl-os-10 bs-xs-16 bs-xs-os-0 hero-in">
             <a href="<?= @$homepageData['header']['latestWork']['url']; ?>" class="reload"> <span class="link-bg"></span>
-              <span class="bs-hero-small upper">Latest projects</span>
+              <span class="bs-hero-small upper">Latest project</span>
               <i>
                 <svg viewBox="0 0 56 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="arrow-line" d="M1 6L49.8077 6" stroke="#EEEEF2" stroke-linecap="round" stroke-linejoin="round"></path>

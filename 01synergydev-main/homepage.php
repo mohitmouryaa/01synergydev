@@ -3,6 +3,8 @@
 include('./Api/homeApi.php');
 include('./Api/settingsApi.php');
 include('./Api/allworkApi.php');
+include('./common/helper.php');
+
 ?>
 
 

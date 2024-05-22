@@ -1,6 +1,7 @@
 <?php
 include('./Api/allServicesApi.php');
 include('./Api/settingsApi.php');
+include('./common/helper.php');
 ?>
 
 
@@ -70,19 +71,20 @@ include('./Api/settingsApi.php');
                     </g>
                 </svg>
                 <div>
+                    <?php $heroTitle = breakServicePageTitle(@$servicesData['headerTitle']); ?>
                     <h1 class="hero-split chars">
                         <div class="bs-160 title-switch red">
-                         <span class="first" data-ch="0">Software</span>
+                         <span class="first" data-ch="0"><?= @$heroTitle[0] ?></span>
                             <!-- <span data-ch="1">Compelling</span>
                             <span data-ch="2">Goal-oriented</span>
                             <span data-ch="3">Functional</span>
                             <span data-ch="4">Performant</span> -->
                         </div>
                         <div class="bs-160 xs-center">
-                            <div class="button-switch hero-in"><i></i><i></i><i></i><i></i><img src="images/coding.png" alt="Refresh icon"></div>development
+                            <div class="button-switch hero-in"><i></i><i></i><i></i><i></i><img src="images/coding.png" alt="Refresh icon"></div><?= @$heroTitle[1] ?>
                         </div>
-                        <div class="bs-160 bs-xl-os-5 right bs-xs-os-0 xs-center offset">that help your</div>
-                        <div class="bs-160 bs-xl-os-7 bs-xs-os-0 right xs-center">business</div>
+                        <div class="bs-160 bs-xl-os-5 right bs-xs-os-0 xs-center offset"><?= @$heroTitle[2] ?></div>
+                        <div class="bs-160 bs-xl-os-7 bs-xs-os-0 right xs-center"><?= @$heroTitle[3] ?></div>
                     </h1>
                 </div>
                 <div class="scroll-to" data-scroll="service-block">
