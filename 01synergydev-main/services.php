@@ -4,24 +4,26 @@ include('./Api/settingsApi.php');
 ?>
 
 
-<!DOCTYPE html><html lang="en" class="no-js">
-<head>
-  <title><?= @$settingData['websiteSettings']['metaTitle'] ?></title>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="robots" content="all" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/cost.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/plans.css" />
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 
-  <style type="text/css">
-    body,
-    #hero {
-      min-height: 100vh;
-    }
-  </style>
+<head>
+    <title><?= @$settingData['websiteSettings']['metaTitle'] ?></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="all" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/cost.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/plans.css" />
+
+    <style type="text/css">
+        body,
+        #hero {
+            min-height: 100vh;
+        }
+    </style>
 </head>
 
 <body class="loading root">
@@ -29,7 +31,7 @@ include('./Api/settingsApi.php');
 
     <?php include('./common/menuIcon.php') ?>
 
-     <?php include('./common/logo.php') ?>
+    <?php include('./common/logo.php') ?>
 
 
     <!-- MENU -->
@@ -48,7 +50,7 @@ include('./Api/settingsApi.php');
         <div class="content services" data-work="root">
             <div id="breadcrumb">
                 <span class="bs-tech hero-in"><a href="/" class="text-link">01Synergy</a></span>
-                <span class="bs-tech active hero-in">Services</span>
+                <span class="bs-tech active hero-in"><?= $servicesData['title'] ?></span>
             </div>
 
             <!-- HERO SECTION -->
@@ -70,14 +72,15 @@ include('./Api/settingsApi.php');
                 <div>
                     <h1 class="hero-split chars">
                         <div class="bs-160 title-switch red">
-                            <span class="first" data-ch="0">Creative</span>
-                            <span data-ch="1">Results-driven</span>
-                            <span data-ch="2">Compelling</span>
-                            <span data-ch="3">Goal-oriented</span>
-                            <span data-ch="4">Functional</span>
-                            <span data-ch="5">Performant</span>
+                            <!-- <span class="first" data-ch="0">Results-driven</span>
+                            <span data-ch="1">Compelling</span>
+                            <span data-ch="2">Goal-oriented</span>
+                            <span data-ch="3">Functional</span>
+                            <span data-ch="4">Performant</span> -->
                         </div>
-                        <div class="bs-160 xs-center"><div class="button-switch hero-in"><i></i><i></i><i></i><i></i><img src="images/refresh.svg" alt="Refresh icon"></div>websites</div>
+                        <div class="bs-160 xs-center">
+                            <div class="button-switch hero-in"><i></i><i></i><i></i><i></i><img src="images/coding.png" alt="Refresh icon"></div>development
+                        </div>
                         <div class="bs-160 bs-xl-os-5 right bs-xs-os-0 xs-center offset">that help your</div>
                         <div class="bs-160 bs-xl-os-7 bs-xs-os-0 right xs-center">business</div>
                     </h1>
@@ -92,20 +95,13 @@ include('./Api/settingsApi.php');
             <section id="service-block" class="service-block bs-grid grid-inner xl-top-2 xs-top-0 xs-wrap">
                 <div class="bs-xl-5 bs-xl-os-0 bs-sm-4 bs-sm-os-0 bs-xs-16 bs-xs-os-3 xs-bottom-1 xs-center">
                     <h2 class="section-title"><i class="circle-tag"></i><i class="circle-tag"></i>What we do</h2>
-                    <p class="xl-top-1 split lines">At 01Synergy, we excel in constructing website ecosystems that seamlessly weave brand narratives, enhance conversions, and cultivate trust.</p>
+                    <p class="xl-top-1 split lines"><?= @$servicesData['description'] ?></p>
                 </div>
                 <div class="bs-xl-12 bs-xl-os-3 bs-sm-8 bs-sm-os-0 bs-xs-22 bs-xs-os-0 xs-top-1">
                     <ul class="service-list bs-30">
-                        <li class="split lines"><a href="../services/website-design"><span>Website design </span></a></li>
-                        <li class="split lines"><a href="../services/motion-design"><span>Motion Design</span></a></li>
-                        <li class="split lines"><a href="../services/front-end-development"><span>Front-end development</span></a></li>
-                        <li class="split lines"><a href="../services/back-end-development"><span>Back-end development</span></a></li>
-                        <li class="split lines"><a href="../services/shopify-development"><span>Shopify development</span></a></li>
-                        <li class="split lines"><a href="../services/website-support"><span>Website Support</span></a></li>
-                        <li class="split lines"><a href="../services/paid-search-advertising"><span>Paid Search Advertising</span></a></li>
-                        <li class="split lines"><a href="../services/social-media-advertising"><span>Social Media Advertising</span></a></li>
-                        <li class="split lines"><a href="../services/email-marketing"><span>Email Marketing</span></a></li>
-                        <li class="split lines"><a href="../services/seo"><span>SEO</span></a></li>
+                        <?php foreach (@$servicesData['list'] as $key => $service) { ?>
+                            <li class="split lines"><a href="<?= $service['url'] ?>"><span><?= $service['title'] ?></span></a></li>
+                        <?php } ?>
                     </ul>
                 </div>
             </section>
@@ -127,73 +123,35 @@ include('./Api/settingsApi.php');
                                 <p class="section-title bs-tech upper white"><i class="circle-tag"></i><i class="circle-tag"></i>01</p>
                             </div>
                             <div class="self-end">
-                                <h3 class="bs-80 upper">PROJECT<br> STRATEGY</h3>
-                                <p>Every project is a canvas where we blend creative vision with strategic foresight. From the initial spark of an idea to the final flourish of execution, our seasoned strategists work hand-in-hand with your team to define goals, streamline processes, and chart a course to success</p>
+                                <h3 class="bs-80 upper"><?= $servicesData['workflow']['steps'][0]['title']; ?></h3>
+                                <p><?= $servicesData['workflow']['steps'][0]['description']; ?></p>
                             </div>
                         </div>
                     </article>
-                    <article class="fp-item stack">
+                    <?php foreach (@$servicesData['workflow']['steps'] as $key => $flow) {
+                        if ($key > 0) {
+                            echo '
+                        <article class="fp-item stack">
                         <div class="inner">
                             <div>
-                                <p class="section-title bs-tech upper white"><i class="circle-tag"></i><i class="circle-tag"></i>02</p>
+                                <p class="section-title bs-tech upper white"><i class="circle-tag"></i><i class="circle-tag"></i>' . ($key + 1) . '</p>
                             </div>
                             <div class="self-end">
-                                <h3 class="bs-80 upper">DESIGN<br> &amp; MOTION</h3>
-                                <p>Our  team is a collective of artists, visionaries, and technophiles, all dedicated to creating immersive experiences that transcend boundaries. We blend cutting-edge technology with artistic finesse to create visuals that not only captivate but also communicate messages with impact</p>
+                                <h3 class="bs-80 upper">'.@$flow['title'].'</h3>
+                                <p>'.@$flow['description'].'</p>
                             </div>
                         </div>
                     </article>
-                    <article class="fp-item stack">
-                        <div class="inner">
-                            <div>
-                                <p class="section-title bs-tech upper white"><i class="circle-tag"></i><i class="circle-tag"></i>03</p>
-                            </div>
-                            <div class="self-end">
-                                <h3 class="bs-80 upper">SMOOTH<br> DEVELOPMENT</h3>
-                                <p>We take pride in our meticulous approach, ensuring every element of your website functions seamlessly. From responsive design that adapts to any device, to smooth navigation that guides users effortlessly, we ensure your visitors are engaged from the very first click.</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="fp-item stack">
-                        <div class="inner">
-                            <div>
-                                <p class="section-title bs-tech upper white"><i class="circle-tag"></i><i class="circle-tag"></i>04</p>
-                            </div>
-                            <div class="self-end">
-                                <h3 class="bs-80 upper">POWERFUL<br> MARKETING</h3>
-                                <p>We're not just marketers; we're storytellers, data analysts, and strategists who thrive on creating connections that drive results. With our arsenal of tools, insights, and creativity, we build campaigns that resonate with your audience and make an impact that lasts.</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="fp-item stack">
-                        <div class="inner">
-                            <div>
-                                <p class="section-title bs-tech upper white"><i class="circle-tag"></i><i class="circle-tag"></i>05</p>
-                            </div>
-                            <div class="self-end">
-                                <h3 class="bs-80 upper">ONGOING<br> SUPPORT</h3>
-                                <p>In the ever-evolving digital landscape, your website isn't a static entity; it's a living, breathing representation of your brand. At 01Synergy, we understand that consistent, reliable support is essential to ensure your online presence remains dynamic and impactful.</p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="fp-item stack">
-                        <div class="inner">
-                            <div>
-                                <p class="section-title bs-tech upper white"><i class="circle-tag"></i><i class="circle-tag"></i>06</p>
-                            </div>
-                            <div class="self-end">
-                                <h3 class="bs-80 upper">FUTURE<br> EVOLUTION</h3>
-                                <p>From immersive user experiences to AI-driven personalization, we're your digital architects for the future. Embracing change is key, and we're here to guide you. With 01Synergy, it's not just a website; it's an evolution that keeps your brand relevant and remarkable.</p>
-                            </div>
-                        </div>
-                    </article>
+                    ';
+                        }
+                    } ?>
                 </div>
             </section>
 
             <!-- OUR GOAL -->
             <section class="goal xl-top-4 xs-top-4">
                 <div class="bs-xl-14 bs-xl-os-5 bs-xs-22 bs-xs-os-1 center">
-                    <h2 class="section-title"><i class="circle-tag"></i><i class="circle-tag"></i>Results Driven</h2>
+                    <h2 class="section-title"><i class="circle-tag"></i><i class="circle-tag"></i></h2>
                     <h3 class="bs-120 xl-top-1 split chars">Driving Success, Delivering Results<i class="dot view"></i></h3>
                     <div class="bs-xl-2 bs-xl-os-6 bs-xs-4 bs-xs-os-9">
                         <div class="line-anim">
@@ -214,7 +172,7 @@ include('./Api/settingsApi.php');
             </section>
 
             <!--footer-->
-    <?php include('./common/footer.php') ?>
+            <?php include('./common/footer.php') ?>
 
         </div>
     </main>
@@ -226,4 +184,6 @@ include('./Api/settingsApi.php');
 
 
 
-</body></html>
+</body>
+
+</html>
