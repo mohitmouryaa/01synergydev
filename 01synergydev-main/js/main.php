@@ -1,6 +1,5 @@
 <script type="text/javascript">
-  const imagesUrls =
-    [
+  const imagesUrls = [
       <?php echo @$links; ?>,
       "../images/default-mood.webp",
     ],
@@ -3196,14 +3195,14 @@
           i = document.querySelector("#gallery-btn"),
           n = document.querySelector("#gallery-btn i");
         let r = s.length;
-        i.addEventListener("mouseenter", function() {
+        i?.addEventListener("mouseenter", function() {
             gsap.timeline().to(n, {
               scale: 1.1,
               duration: 1,
               ease: "elastic"
             });
           }),
-          i.addEventListener("mouseleave", function() {
+          i?.addEventListener("mouseleave", function() {
             gsap.timeline().to(n, {
               scale: 1,
               duration: 1,
@@ -3214,7 +3213,7 @@
           l = gsap.timeline(),
           u = gsap.timeline(),
           d = gsap.timeline();
-        i.addEventListener("click", () => {
+        i?.addEventListener("click", () => {
           !(function(e) {
             if (u.isActive()) return;
             if (d.isActive()) return;
@@ -3531,16 +3530,36 @@
         }),
         MainThreeScene.start());
   };
+
+  function getNumberFromDefaultString(str) {
+    if (str.startsWith("default")) {
+      return str.substring(7); // Remove "default" prefix and return the remaining part as a string
+    } else {
+      return null; // Handle the case where the string doesn't start with "default"
+    }
+  }
+
   updateGl();
   const changeTexture = function() {
-    bodyTag.classList.contains("default") &&
-      (MainThreeScene.changeTexture(0, !1), MainThreeScene.setParams({
+    bodyTag.classList[0].includes("default") &&
+      (MainThreeScene.changeTexture(<?= count(@$allworkpageData['list'] ? @$allworkpageData['list'] : []); ?>, !1), MainThreeScene.setParams({
+        mainBall: {
+          reflectionColor: 3554679
+        }
+      }))
+    bodyTag.classList.contains("default") ?
+      (MainThreeScene.changeTexture(<?= @$photoIndex ? $photoIndex : 0 ?>), MainThreeScene.setParams({
         mainBall: {
           reflectionColor: 1909061
         }
+      })) : bodyTag.classList[0].includes("default") &&
+      (MainThreeScene.changeTexture(getNumberFromDefaultString(bodyTag.classList[0]), !1), MainThreeScene.setParams({
+        mainBall: {
+          reflectionColor: 3554679
+        }
       })),
       bodyTag.classList.contains("ssi") &&
-      (MainThreeScene.changeTexture(0), MainThreeScene.setParams({
+      (MainThreeScene.changeTexture(<?= @$photoIndex ?>), MainThreeScene.setParams({
         mainBall: {
           reflectionColor: 16777215
         }

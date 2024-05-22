@@ -68,7 +68,7 @@
                 </svg>
               </div>
               <h3 class="bs-120 upper">
-                <a href="/work.php" class="mask-link" data-id="work" aria-label="Work"><span>Work</span><i class="dot work-dot">
+                <a href="/our-work" class="mask-link" data-id="work" aria-label="Work"><span>Work</span><i class="dot work-dot">
                     <svg viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M10 8.12543L5 11L-2.25534e-07 8.12543L2.3356e-07 2.87401L5 2.18537e-07L10 2.87401L10 8.12543Z" fill="#C49E76"></path>
                     </svg></i>

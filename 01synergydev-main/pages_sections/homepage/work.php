@@ -83,5 +83,5 @@
         </div>
       </section>
       <div class="bs-xl-6 bs-xl-os-15 bs-xs-22 bs-xs-os-1 view xl-top-4 xl-bottom-2 xs-top-2">
-        <a href="/work.php" class="arrow-link al-hover bs-tech"><i><img src="images/arrow-link.svg" alt="line arrow icon" /></i>View all work</a>
+        <a href="/our-work" class="arrow-link al-hover bs-tech"><i><img src="images/arrow-link.svg" alt="line arrow icon" /></i>View all work</a>
       </div>
