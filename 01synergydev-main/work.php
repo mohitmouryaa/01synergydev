@@ -52,7 +52,7 @@ include('./Api/settingsApi.php');
             <section class="work-slider grid-inner">
                 <div class="swipe-info bs-tech" data-layout="1">Swipe to change</div>
                 <div id="work-switch">
-                    <div class="icon">
+                    <!-- <div class="icon">
                         <div>
                             <i></i><i></i><i></i><i></i><i></i>
                         </div>
@@ -61,7 +61,7 @@ include('./Api/settingsApi.php');
                         </div>
                     </div>
                     <span class="bs-14 bs-tech upper open-thumbs">All projects</span>
-                    <span class="bs-14 bs-tech upper close-thumbs">Close</span>
+                    <span class="bs-14 bs-tech upper close-thumbs">Close</span> -->
                 </div>
 
                 <!-- LAYOUT A -->
