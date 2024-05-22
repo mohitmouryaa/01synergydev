@@ -9,7 +9,8 @@
       MainThreeScene.initTextures(imagesUrls),
       (document.documentElement.className = "js"),
       (window.onbeforeunload = function() {
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
+
       }),
       gsap.registerPlugin(ScrollSmoother, ScrollTrigger, SplitText, DrawSVGPlugin, MorphSVGPlugin, InertiaPlugin, Flip, MotionPathPlugin),
       document.querySelector(".work") && isMobile())
@@ -3897,15 +3898,20 @@
     // })
     ;
 
-  // document.addEventListener('DOMContentLoaded', function() {
-  //   document.querySelectorAll('a.reload').forEach(function(link) {
-  //     link.addEventListener('click', function(event) {
-  //       event.preventDefault(); // Prevent the default link behavior
-  //       setTimeout(() => {
-  //         let targetUrl = this.getAttribute('href'); // Get the href attribute of the clicked link
-  //         window.location.href = targetUrl; // Change the location to the target URL
-  //       }, 800);
-  //     });
-  //   });
-  // });
+    $(".nav-link, .text-link").click(function(e) {
+    e.preventDefault();
+    let targetUrl = this.getAttribute('href'); // Get the href attribute of the clicked link
+          window.location.href = targetUrl; // Change the location to the target URL
+});
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+          let targetUrl = this.getAttribute('href'); // Get the href attribute of the clicked link
+          window.location.href = targetUrl; // Change the location to the target URL
+      });
+    });
+  });
 </script>

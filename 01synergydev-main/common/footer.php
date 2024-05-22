@@ -20,7 +20,7 @@
           <div class="bs-grid xs-wrap">
             <div class="bs-xl-8 bs-xs-22">
               <h3 class="bs-120 upper">
-                <a href="../studio"><span>
+                <a href="/"><span>
                     <img src="<?= $baseUrl . $settingData['websiteSettings']['footerContent']['footerLogo'] ?>" style="width: 200px;" />
                   </span></a>
               </h3>
@@ -42,7 +42,7 @@
                     <?php $services = @$homepageData['whatWeDo']['list'] ? @$homepageData['whatWeDo']['list'] : $servicesData['list'] ; ?>
                     <?php foreach ( $services as $key => $item) {  ?>
                       <li>
-                        <a class="text-link" href="..<?php echo $item['url']; ?>"><span><?php echo $item['title']; ?></span></a>
+                        <a class="text-link" href="<?php echo $item['url']; ?>"><span><?php echo $item['title']; ?></span></a>
                       </li>
                     <?php } ?>
                   </ul>

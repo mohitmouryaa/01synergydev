@@ -1,6 +1,7 @@
 <?php
 include('./Api/settingsApi.php');
 include('./Api/allworkApi.php');
+include('./Api/allServicesApi.php');
 include('./common/constant.php');
 
 
