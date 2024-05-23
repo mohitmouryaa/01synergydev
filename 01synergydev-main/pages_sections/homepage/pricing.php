@@ -22,7 +22,7 @@
                 <div class="pricing-subtitle garboo"><?php echo isset($item['offerDescription']) ? htmlspecialchars($item['offerDescription']) : ''; ?></div>
                 <div class="text-block"> &nbsp;</div>
                 <div class="pricing-price">USD $<?php echo isset($item['price']) ? htmlspecialchars($item['price']) : ''; ?>
-                <?= @$item['title'] === "Weekly" ? "/Week" : "/Month"?>
+                <?= @$item['title'] === "Bi Weekly" ? "/2 weeks" : "/Month"?>
                 </div>
                 <div class="paragraph-regular margin-bottom-20"><?php echo isset($item['description']) ? htmlspecialchars($item['description']) : ''; ?></div>
                 <div class="margin-top margin-medium">

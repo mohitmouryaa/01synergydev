@@ -1,3 +1,4 @@
+
 #cost {
   margin-top: 150px;
 }
@@ -154,7 +155,7 @@
   color: #ddd;
   font-size: 18px;
   text-align: center;
-  width: 100%;
+  width: max-content;
 }
 #cost strong.oisPrice {
   font-size: 2rem;
