@@ -61,7 +61,7 @@
                   </strong>
                 </div>
                 <div id="w-node-_4ed9bac7-7c82-8a99-a10e-80eade269f2e-d1250d33" class="comparison-negative okok">
-                  <strong>
+                  <strong style="margin-left: 20px;">
                     USD $<?php echo htmlspecialchars($costComparisonData['costCategories'][0]['totals']['employee']); ?>
                   </strong>
                 </div>

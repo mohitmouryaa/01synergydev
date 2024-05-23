@@ -5,7 +5,7 @@
           <i class="circle-tag"></i>
         </span>
         <div class="usp-carousel">
-          <p class="inner item-first">A 01Synergy Product</p>
+          <p class="inner item-first">A Product of 01Synergy</p>
         </div>
 
       </div>
