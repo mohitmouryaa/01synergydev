@@ -4,7 +4,8 @@
     </div>
     <div class="bs-xl-4 bs-xs-16 bs-xl-os-1 bs-xs-os-0 xs-top-1">
         <!-- <p class="split lines xl-bottom-3 xs-bottom-2 upper"> -->
-        <?php echo @$homepageData['about']['smallDescription'] ?>
+        <?php echo @$homepageData['header']['description']; ?>
+
         <!-- </p> -->
     </div>
     <div class="bs-xl-os-1 bs-xl-10 bs-sm-os-6 bs-sm-12 bs-xs-os-0 bs-xs-22 bs-xs-os-0">

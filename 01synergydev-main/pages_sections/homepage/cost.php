@@ -36,15 +36,15 @@
                   <div class="comparison-row-3">
                     <div id="w-node-_6612d80a-867b-bada-6851-090d4aaf9640-d1250d33" class="comparison-negative">
                       <strong>
-                        <?php echo htmlspecialchars($employeeAttribute['attributeName']); ?> : $
-                        <?php echo htmlspecialchars($employeeAttribute['attributeValue']); ?>
+                        <?php echo htmlspecialchars($employeeAttribute['attributeName']); ?> : USD
+                        $<?php echo htmlspecialchars($employeeAttribute['attributeValue']); ?>
                       </strong>
                     </div>
                     <?php if (isset($category['costAttributes']['ois'][$index])) : ?>
                       <div id="w-node-f0d159ac-5961-b485-be7b-d20a7c0aae16-d1250d33" class="comparison-negative positive" style="position: absolute; right: 0; width: 50%; height: <?php echo (count($category['costAttributes']['employee']) * 50) + 5; ?>px;">
                         <strong class="oisPrice">
-                          <?php echo htmlspecialchars($category['costAttributes']['ois'][$index]['attributeName']); ?> : $
-                          <?php echo htmlspecialchars($category['costAttributes']['ois'][$index]['attributeValue']); ?>
+                          <?php echo htmlspecialchars($category['costAttributes']['ois'][$index]['attributeName']); ?> : USD
+                          $<?php echo htmlspecialchars($category['costAttributes']['ois'][$index]['attributeValue']); ?>
                         </strong>
                       </div>
                     <?php endif; ?>
@@ -57,12 +57,12 @@
               <div class="comparison-row-3 customrow">
                 <div class="comparison-positive-2 ok" style="display: flex; align-items: center;">
                   <strong class="bold-text-7">
-                    $<?php echo htmlspecialchars($costComparisonData['costCategories'][0]['totals']['ois']); ?>
+                    USD $<?php echo htmlspecialchars($costComparisonData['costCategories'][0]['totals']['ois']); ?>
                   </strong>
                 </div>
                 <div id="w-node-_4ed9bac7-7c82-8a99-a10e-80eade269f2e-d1250d33" class="comparison-negative okok">
                   <strong>
-                    $<?php echo htmlspecialchars($costComparisonData['costCategories'][0]['totals']['employee']); ?>
+                    USD $<?php echo htmlspecialchars($costComparisonData['costCategories'][0]['totals']['employee']); ?>
                   </strong>
                 </div>
               </div>

@@ -21,7 +21,9 @@
                 <h2 class="heading-style-h3"><?php echo isset($item['title']) ? htmlspecialchars($item['title']) : ''; ?></h2>
                 <div class="pricing-subtitle garboo"><?php echo isset($item['offerDescription']) ? htmlspecialchars($item['offerDescription']) : ''; ?></div>
                 <div class="text-block"> &nbsp;</div>
-                <div class="pricing-price">$<?php echo isset($item['price']) ? htmlspecialchars($item['price']) : ''; ?>/mo</div>
+                <div class="pricing-price">USD $<?php echo isset($item['price']) ? htmlspecialchars($item['price']) : ''; ?>
+                <?= @$item['title'] === "Weekly" ? "/Week" : "/Month"?>
+                </div>
                 <div class="paragraph-regular margin-bottom-20"><?php echo isset($item['description']) ? htmlspecialchars($item['description']) : ''; ?></div>
                 <div class="margin-top margin-medium">
                   <a href="<?php echo isset($item['buttonUrl']) ? htmlspecialchars($item['buttonUrl']) : ''; ?>" class="main-button w-inline-block">

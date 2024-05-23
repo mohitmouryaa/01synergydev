@@ -1122,7 +1122,8 @@
     }
 
     .bs-xs-os-0 {
-        margin-left: 0vw
+        margin-left: 0vw;
+        margin-top: 25px;
     }
 
     .bs-xs-os-1 {
@@ -6360,7 +6361,7 @@ article.testimonial h3 {
     align-items: flex-start;
     padding-bottom: 4.1666vw;
     min-height: auto;
-    height: 100vh;
+    height: 80vh;
     padding-top: 17.5vh;
     position: relative
 }
@@ -6553,7 +6554,7 @@ article.testimonial h3 {
 
 @media only screen and (max-width:768px) {
     .home #hero .bs-220 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .home #hero .bs-220>div:first-of-type {
@@ -11981,7 +11982,7 @@ ul.service-list li:last-of-type a {
 
     .work-detail #hero {
         min-height: auto;
-        height: 75vh;
+        height: 100vh;
         -webkit-box-align: end;
         -ms-flex-align: end;
         align-items: flex-end
