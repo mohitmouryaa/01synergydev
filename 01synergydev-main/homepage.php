@@ -1,4 +1,3 @@
-
 <?php
 include('./Api/homeApi.php');
 include('./Api/settingsApi.php');
@@ -71,23 +70,18 @@ include('./common/helper.php');
       <?php include './pages_sections/homepage/about.php'; ?>
 
 
-      <!-- WORK SECTION -->
-      <?php include './pages_sections/homepage/work.php'; ?>
-
-
-      <!-- ATITUDE SECTION -->
+      <!-- Process SECTION -->
       <?php include './pages_sections/homepage/howitworks.php'; ?>
-
-
-      <!-- CLIENTS SECTION -->
-      <?php include './pages_sections/homepage/resources.php'; ?>
-
-
-      <?php include './pages_sections/homepage/cost.php'; ?>
-
 
       <?php include './pages_sections/homepage/pricing.php'; ?>
 
+      <?php include './pages_sections/homepage/cost.php'; ?>
+
+      <!-- WORK SECTION -->
+      <?php include './pages_sections/homepage/work.php'; ?>
+
+      <!-- CLIENTS SECTION -->
+      <?php include './pages_sections/homepage/resources.php'; ?>
 
 
       <!-- AWARDS SECTION -->

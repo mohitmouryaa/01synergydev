@@ -6323,7 +6323,8 @@ article.testimonial h3 {
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%)
+    -ms-transform: translateY(-50%);
+    left: -100px;
 }
 
 #usp span:nth-of-type(2) {
@@ -6342,6 +6343,7 @@ article.testimonial h3 {
 }
 
 #usp .usp-carousel .inner {
+    padding-left: 15px;
     display: block;
     position: absolute;
     width: 100%;
@@ -11001,12 +11003,17 @@ ul.service-list li:last-of-type a {
     }
 
     #logo {
+        height: 80px !important;
         top: 4.1666vw;
-        left: 4.1666vw;
-        width: 50px;
+        left: 2vw !important;
+        width: 80px !important;
         height: 50px;
         -webkit-transform: translate3d(0, 0, 1px);
-        transform: translate3d(0, 0, 1px)
+        transform: translate3d(0, 0, 1px);
+    }
+
+    #logo img {
+        width: 80px !important;
     }
 
     .bs-120 {
@@ -11041,6 +11048,7 @@ ul.service-list li:last-of-type a {
     }
 
     #usp>span:first-of-type {
+        display: none !important;
         margin-bottom: 1em;
         padding: 0.5em 1em 0.35em;
         border-radius: 5px;
